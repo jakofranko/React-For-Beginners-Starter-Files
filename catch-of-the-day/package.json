@@ -2,6 +2,7 @@
   "name": "cotd",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://jakofranko.github.io/react-demo",
   "devDependencies": {
     "autoprefixer-stylus": "0.10.0",
     "babel-eslint": "^7.1.1",
@@ -19,10 +20,12 @@
     "react": "15.3.2",
     "react-addons-css-transition-group": "15.3.2",
     "react-dom": "15.3.2",
-    "react-router": "4.0.0-alpha.4"
+    "react-router": "4.0.0-alpha.4",
+    "serve": "^6.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
+    "now-start": "serve --single ./build",
     "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
